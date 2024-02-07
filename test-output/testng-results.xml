@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-07T21:35:23 IST" name="Suite" finished-at="2024-02-07T21:38:17 IST" duration-ms="174117">
+    <groups>
+    </groups>
+    <test started-at="2024-02-07T21:35:23 IST" name="Test" finished-at="2024-02-07T21:38:17 IST" duration-ms="174117">
+      <class name="testCase.TC_001_SearchingCardiologiests">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_001_SearchingCardiologiests@38425407]" started-at="2024-02-07T21:35:24 IST" name="setup" finished-at="2024-02-07T21:35:39 IST" duration-ms="15254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SearchingCardiologiests()[pri:1, instance:testCase.TC_001_SearchingCardiologiests@38425407]" started-at="2024-02-07T21:35:39 IST" name="SearchingCardiologiests" finished-at="2024-02-07T21:35:48 IST" duration-ms="9157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchingCardiologiests -->
+        <test-method signature="gettingCardiologiests()[pri:2, instance:testCase.TC_001_SearchingCardiologiests@38425407]" started-at="2024-02-07T21:35:49 IST" name="gettingCardiologiests" finished-at="2024-02-07T21:36:09 IST" duration-ms="20361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettingCardiologiests -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCase.TC_001_SearchingCardiologiests@38425407]" started-at="2024-02-07T21:36:10 IST" name="teardown" finished-at="2024-02-07T21:36:11 IST" duration-ms="1705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCase.TC_001_SearchingCardiologiests -->
+      <class name="testCase.TC_004_CorporateHealthAndWellness_ValidDetails">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_004_CorporateHealthAndWellness_ValidDetails@1165b38]" started-at="2024-02-07T21:37:37 IST" name="setup" finished-at="2024-02-07T21:37:52 IST" duration-ms="15805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkingValidDetails()[pri:1, instance:testCase.TC_004_CorporateHealthAndWellness_ValidDetails@1165b38]" started-at="2024-02-07T21:37:52 IST" name="checkingValidDetails" finished-at="2024-02-07T21:38:15 IST" duration-ms="22824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingValidDetails -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCase.TC_004_CorporateHealthAndWellness_ValidDetails@1165b38]" started-at="2024-02-07T21:38:15 IST" name="teardown" finished-at="2024-02-07T21:38:17 IST" duration-ms="1801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCase.TC_004_CorporateHealthAndWellness_ValidDetails -->
+      <class name="testCase.TC_002_CaptureSurgeries">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:36:11 IST" name="setup" finished-at="2024-02-07T21:36:24 IST" duration-ms="12355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CapturePopularSurgeries()[pri:1, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:36:24 IST" name="CapturePopularSurgeries" finished-at="2024-02-07T21:36:33 IST" duration-ms="9520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CapturePopularSurgeries -->
+        <test-method signature="GeneralSurgeries()[pri:2, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:36:34 IST" name="GeneralSurgeries" finished-at="2024-02-07T21:36:39 IST" duration-ms="5174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GeneralSurgeries -->
+        <test-method signature="OphthamologySurgeries()[pri:3, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:36:39 IST" name="OphthamologySurgeries" finished-at="2024-02-07T21:36:44 IST" duration-ms="4254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OphthamologySurgeries -->
+        <test-method signature="ProctologySurgeries()[pri:3, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:36:44 IST" name="ProctologySurgeries" finished-at="2024-02-07T21:36:48 IST" duration-ms="3880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProctologySurgeries -->
+        <test-method signature="UrologySurgeries()[pri:4, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:36:49 IST" name="UrologySurgeries" finished-at="2024-02-07T21:36:55 IST" duration-ms="5627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UrologySurgeries -->
+        <test-method signature="CosmeticSurgeries()[pri:5, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:36:55 IST" name="CosmeticSurgeries" finished-at="2024-02-07T21:36:59 IST" duration-ms="3781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CosmeticSurgeries -->
+        <test-method signature="OrthopedicsSurgeries()[pri:6, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:37:00 IST" name="OrthopedicsSurgeries" finished-at="2024-02-07T21:37:05 IST" duration-ms="5092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrthopedicsSurgeries -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCase.TC_002_CaptureSurgeries@327514f]" started-at="2024-02-07T21:37:05 IST" name="teardown" finished-at="2024-02-07T21:37:08 IST" duration-ms="2554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCase.TC_002_CaptureSurgeries -->
+      <class name="testCase.TC_003_CorporateHealthAndWellness_InvalidDetails">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_003_CorporateHealthAndWellness_InvalidDetails@5b12b668]" started-at="2024-02-07T21:37:08 IST" name="setup" finished-at="2024-02-07T21:37:19 IST" duration-ms="11276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkingInvalidDetails()[pri:1, instance:testCase.TC_003_CorporateHealthAndWellness_InvalidDetails@5b12b668]" started-at="2024-02-07T21:37:19 IST" name="checkingInvalidDetails" finished-at="2024-02-07T21:37:33 IST" duration-ms="13953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingInvalidDetails -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCase.TC_003_CorporateHealthAndWellness_InvalidDetails@5b12b668]" started-at="2024-02-07T21:37:34 IST" name="teardown" finished-at="2024-02-07T21:37:37 IST" duration-ms="2717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCase.TC_003_CorporateHealthAndWellness_InvalidDetails -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
