@@ -1,7 +1,26 @@
-22:24:07.372 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Organization Name Entered
-22:24:07.605 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Contact Number Entered
-22:24:07.899 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Valid Email-Id Entered
-22:24:08.394 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Organizantion's Size from Dropdown
-22:24:08.661 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Interested-In from Dropdown
-22:24:08.934 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Schedule button 
-22:24:24.524 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Captured ScreenShot of Thank You Pop-Up
+17:00:56.194 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Scrolled down
+17:00:56.565 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Name Entered
+17:00:56.900 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Organization Name Entered
+17:00:57.161 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - The Contact Number Entered
+17:00:57.371 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Invalid Email-Id Entered
+17:00:57.701 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Selected Organizantion's Size from Dropdown
+17:00:58.016 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Selected Interested-In from Dropdown
+17:00:58.084 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Schedule button is disabled
+17:00:58.084 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - ***** Ending TC_003_CorporateHealthAndWellness_InvalidDetails *****
+17:01:12.168 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Starting TC_004_CorporateHealthAndWellness_ValidDetails *****
+17:01:12.403 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Corporates
+17:01:18.811 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Health And Wellness Plans Option
+17:01:18.835 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Scrolled down
+17:01:19.067 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Name Entered
+17:01:19.359 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Organization Name Entered
+17:01:19.676 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Contact Number Entered
+17:01:20.070 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Valid Email-Id Entered
+17:01:20.313 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Organizantion's Size from Dropdown
+17:01:20.576 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Interested-In from Dropdown
+17:01:20.847 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Schedule button 
+17:01:36.165 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Captured ScreenShot of Thank You Pop-Up
+17:01:36.165 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Validating expected THANK YOU Message
+17:01:36.233 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - THANK YOU Message Validated
+17:01:36.234 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Text in console 
+17:01:36.290 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Paragraph in console 
+17:01:36.290 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Ending TC_004_CorporateHealthAndWellness_ValidDetails *****

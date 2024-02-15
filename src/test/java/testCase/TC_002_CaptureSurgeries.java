@@ -17,13 +17,14 @@ import utilities.TakeScreenshot;
 
 public class TC_002_CaptureSurgeries extends baseClass{
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "sanity" })
 	public void CapturePopularSurgeries() throws InterruptedException, IOException
 	{
+	logger.info("***** Starting TC_002_CaptureSurgeries *****");
 	try 
 	{
 		
-		logger.info("***** Starting TC_002_CaptureSurgeries *****");
+		
 		homePage hp=new homePage(driver);
 		
 		hp.clickOnSurgeries();
@@ -49,7 +50,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 		
 		System.out.println("List Of Popular Surgeries");
 		System.out.println("===============================================");
-		//List<WebElement> dentists = dp.getDentists();
+		
 		for (int i = 0; i < surgeries.size(); i++) {
 			System.out.println(surgeries.get(i).getText());
 			et.setCellData("Popular_surgeries", i, 0, surgeries.get(i).getText());
@@ -63,7 +64,8 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	catch(Exception e) 
 	{
 		System.out.println("Capture Popular Surgeries test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Capture Popular Surgeries test failed..");
+		Assert.fail("An exception occurred in Capture Popular Surgeries test: " + e.getMessage());	
 	}
 		
 	}
@@ -72,7 +74,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	
 	
 	
-	@Test(priority = 2)
+	@Test(priority = 2, groups = { "sanity" })
 	public void GeneralSurgeries() throws IOException
 	{
 	try 
@@ -114,12 +116,13 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	catch(Exception e) 
 	{
 		System.out.println("General Surgeries test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("General Surgeries test failed..");
+		Assert.fail("An exception occurred in General Surgeries test: " + e.getMessage());	
 	}
 	
 	}
 		
-	@Test(priority = 3)
+	@Test(priority = 3, groups = { "sanity" })
 	public void ProctologySurgeries() throws IOException
 	{
 	try 
@@ -157,14 +160,15 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	catch(Exception e) 
 	{
 		System.out.println("Proctology Surgeries test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Proctology Surgeries test failed..");
+		Assert.fail("An exception occurred in Proctology Surgeries test: " + e.getMessage());
 	}
 	
 	}
 	
 		
 		
-	@Test(priority = 3)
+	@Test(priority = 4, groups = { "sanity" })
 	public void OphthamologySurgeries() throws IOException
 	{
 	try 
@@ -202,14 +206,15 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	catch(Exception e) 
 	{
 		System.out.println("Ophthamology Surgeries test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Ophthamology Surgeries test failed..");
+		Assert.fail("An exception occurred in Ophthamology Surgeries test: " + e.getMessage());	
 	}
 	
 	}	
 		
 		
 		
-	@Test(priority = 4)
+	@Test(priority = 5, groups = { "sanity" })
 	public void UrologySurgeries() throws IOException
 	{
 	try 
@@ -250,11 +255,12 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	catch(Exception e) 
 	{
 		System.out.println("Urology Surgeries test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Urology Surgeries test failed..");
+		Assert.fail("An exception occurred in Urology Surgeries test: " + e.getMessage());	
 	}	
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 6, groups = { "sanity" })
 	public void CosmeticSurgeries() throws IOException
 	{
 	try 
@@ -296,12 +302,13 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	catch(Exception e) 
 	{
 		System.out.println("Cosmetic Surgeries test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Cosmetic Surgeries test failed..");
+		Assert.fail("An exception occurred in Cosmetic Surgeries test: " + e.getMessage());	
 	}
 	
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 7, groups = { "sanity" })
 	public void OrthopedicsSurgeries() throws IOException
 	{
 	try 
@@ -340,14 +347,17 @@ public class TC_002_CaptureSurgeries extends baseClass{
 		sp.ClickOnClose();
 		logger.info("Clicked on Close Button and Closed the Open Tab");
 		
-		logger.info("***** Ending TC_002_CaptureSurgeries *****");
+		
 	}
+	
 	catch(Exception e) 
 	{
 		System.out.println("Orthopedics Surgeries test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Orthopedics Surgeries test failed..");
+		Assert.fail("An exception occurred in Orthopedics Surgeries test: " + e.getMessage());	
 	}
-	
+	logger.info("***** Ending TC_002_CaptureSurgeries *****");
+
 	}
 
 }

@@ -11,12 +11,13 @@ import testBase.baseClass;
 
 public class TC_003_CorporateHealthAndWellness_InvalidDetails extends baseClass{
 	
-	@Test(priority = 1)
+	@Test(groups = { "sanity" })
 	public void checkingInvalidDetails()
 	{
+	logger.info("***** Starting TC_003_CorporateHealthAndWellness_InvalidDetails *****");
 	try 
 	{
-		logger.info("***** Starting TC_003_CorporateHealthAndWellness_InvalidDetails *****");
+		
 		homePage hp=new homePage(driver);
 	
 		hp.clickOnforCorporates();
@@ -51,27 +52,33 @@ public class TC_003_CorporateHealthAndWellness_InvalidDetails extends baseClass{
 		
 		if (!hwp.getScheduleButton().isEnabled()) 
 		{
-			//takeSnapshot(driver, "Invalid Details Form");
+			
+			System.out.println("===============================================");
 			System.out.println("Schedule button is disabled");
+			System.out.println("===============================================");
 			logger.info("Schedule button is disabled");
 			
 		}
 		else 
 		{
+			System.out.println("===============================================");
 			System.out.println("Schedule button is Enabled");
+			System.out.println("===============================================");
 			logger.error("Schedule button is Enabled");
 			
 			Assert.fail();
 			logger.error("Error");
 //			hwp.getScheduleButton();
 		}
-		logger.info("***** Ending TC_003_CorporateHealthAndWellness_InvalidDetails *****");
+	
 	}
 	catch(Exception e) 
 	{
 		System.out.println("Checking Invalid Details test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Checking Invalid Details test failed");
+		Assert.fail("An exception occurred in Checking Invalid Details test: " + e.getMessage());	
 	}
+	logger.info("***** Ending TC_003_CorporateHealthAndWellness_InvalidDetails *****");
 	}
 
 }
@@ -79,64 +86,3 @@ public class TC_003_CorporateHealthAndWellness_InvalidDetails extends baseClass{
 
 
 
-//@Test(priority = 3)
-//public void EnteringDetailsNegative() throws IOException, InterruptedException 
-//{
-//
-//	homePage hp=new homePage(driver);
-//	
-//	//SurgeriesPage sp =new SurgeriesPage(driver);
-//	
-//	HealthAndWellnessPage hwp =new HealthAndWellnessPage(driver);
-//	
-////	JavascriptExecutor js = (JavascriptExecutor)driver;
-////	
-////	js.executeScript("arguments[0].scrollIntoView();", sp.forCorporatesElement);
-//	
-//	hp.clickOnforCorporates();
-//	
-//	hp.clickOnHealthAndWellnessPlans();
-//	
-//	
-//	
-//	//js.executeScript("arguments[0].scrollIntoView();", hwp.ScheduleDemoAreaElement);
-//	
-//	
-//	
-//	hwp.EnterNameElement.sendKeys(p.getProperty("Name"));
-//	
-//	hwp.OrganizationNameElement.sendKeys(p.getProperty("OrgName"));
-//	
-//	hwp.ContactNumberElement.sendKeys(p.getProperty("ContactNo"));
-//	
-//	hwp.officialEmailIdElement.sendKeys(p.getProperty("InvalidemailId"));
-//	
-//	hwp.organizantionSizeDropdown();
-//	
-//	hwp.interestedInDropdown();
-//	
-//	if(hwp.getScheduleDemoAreaElement().isEnabled())
-//	{
-//		
-//		hwp.ClickScheduleButton();
-//		System.out.println("Schedule Demo Button is Enabled");
-//		
-//		Thread.sleep(10000);
-//		
-//		
-//		TakeScreenshot ts = new TakeScreenshot(driver);
-//		
-//		ts.takeScreenshot(driver, "Firstscreenshot.png");
-//		
-//		String thankyou= hwp.captureThankYouTextElement.getText();
-//		System.out.println(thankyou);
-//		
-//		String belowtext= hwp.captureBelowTextElement.getText();
-//		System.out.println(belowtext);
-//	}
-//	else
-//	{
-//		System.out.println("Schedule Demo Button is Disabled");
-//	}
-//	
-//}

@@ -18,34 +18,34 @@ import utilities.ExcelUtils;
 
 public class TC_001_SearchingCardiologiests extends baseClass{
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "sanity" })
 	public void SearchingCardiologiests() throws InterruptedException
 	{
-	try 
-		
+	
+	logger.info("***** Starting TC_001_SearchingCardiologiests *****");
+	try 	
 	{
-		logger.info("***** Starting TC_001_SearchingCardiologiests *****");
 		
 		homePage hp=new homePage(driver);
-		
-		logger.debug("Application logs started........");
-		
-		hp.ClickonLocation();
+		hp.LocationArea.click();
 		logger.info("Clicked on Location input box");
 		
-		hp.ClearLocation();
+		hp.LocationArea.clear();
 		logger.info("Cleared existing Location Appearing");
 		
-		hp.EnterLocation();
-		logger.info("Entered Location as Banglore");
+		hp.LocationArea.sendKeys("Bangalor");
+		logger.info("Entered Location as Bangalore");
 		
-		hp.ClickOnBloreLoc();
+		Thread.sleep(1000);
+		
+		hp.BangloreOption.click();
 		logger.info("Clicked on Banglore Location Option");
+		
 		
 		hp.ClickOnSearchDoc();
 		logger.info("Clicked On Search Doctors, Clinic, Hosplitals,etc.");
 		
-		hp.EnterDocSpeciality();
+		hp.SearchDoctorsArea.sendKeys(p.getProperty("Doctors_Spc"));;
 		logger.info("Entered Doctor's Speciality as Cardiologiest");
 		
 		Thread.sleep(1000);
@@ -56,13 +56,14 @@ public class TC_001_SearchingCardiologiests extends baseClass{
 	catch(Exception e) 
 	{
 		System.out.println("Searching Cardiologiests test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Searching Cardiologiests test failed..");
+		Assert.fail("An exception occurred in Searching Cardiologiests test: " + e.getMessage());
 	}
 		
 	}
 	
-	@Test(priority = 2)
-	//@Test(dependsOnMethods = "SearchingCardiologiests")
+	@Test(dependsOnMethods = "SearchingCardiologiests", groups = { "sanity" })
+	
 	public void gettingCardiologiests() throws InterruptedException, IOException 
 	{
 	try 
@@ -121,95 +122,36 @@ public class TC_001_SearchingCardiologiests extends baseClass{
 			
 			String d= doctordetails.get(i).getText();
 			System.out.println(d);
-			logger.info("Printed Doctor's Details in console");
+			logger.info("Printed Doctor: "+i+" Details in console");
 			
 			//Capturing Doctor's Name in Excel Sheet
 			et.setCellData("Doctors_Name", i, 0, doctorName.get(i).getText());
-			logger.info("Printed Doctor's Name in Excel");
+			logger.info("Printed Doctor: "+i+" Name in Excel");
 			System.out.println("===============================================");
 			
 			WebElement doctor_details= doctordetails.get(i);
 			File src = doctor_details.getScreenshotAs(OutputType.FILE);
-			//File DestFile = new File(System.getProperty("user.dir")+"\\Screenshots\\doctors\"+i+\".png");
+			
 			File DestFile = new File("C:\\Users\\2303559\\eclipse-workspace\\finding_Hospitals\\Screenshots\\doctors"+i+".png");
 			
 			FileUtils.copyFile(src, DestFile);
-			logger.info("ScreenShot Captured of Doctor's Details ");
+			logger.info("ScreenShot Captured of Doctor: "+i+" Details ");
 	
 			
 		}
-		logger.info("***** Ending TC_001_SearchingCardiologiests *****");
+		
 	}
 	catch(Exception e) 
 	{
+		
 		System.out.println("Getting Cardiologiests test failed"+ e.getMessage());
-		Assert.fail();
+		logger.error("Getting Cardiologiests test failed..");
+		Assert.fail("An exception occurred in Getting Cardiologists Test: " + e.getMessage());
+		
+		
 	}
 	
-		
+	logger.info("***** Ending TC_001_SearchingCardiologiests *****");	
 }
 
 }
-
-
-
-
-
-
-//homePage hp=new homePage(driver);
-//
-////SurgeriesPage sp =new SurgeriesPage(driver);
-//
-//HealthAndWellnessPage hwp =new HealthAndWellnessPage(driver);
-//
-////JavascriptExecutor js = (JavascriptExecutor)driver;
-////
-////js.executeScript("arguments[0].scrollIntoView();", sp.forCorporatesElement);
-//
-//hp.clickOnforCorporates();
-//
-//hp.clickOnHealthAndWellnessPlans();
-//
-//
-//
-////js.executeScript("arguments[0].scrollIntoView();", hwp.ScheduleDemoAreaElement);
-//
-//
-//
-//hwp.EnterNameElement.sendKeys(p.getProperty("Name"));
-//
-//hwp.OrganizationNameElement.sendKeys(p.getProperty("OrgName"));
-//
-//hwp.ContactNumberElement.sendKeys(p.getProperty("ContactNo"));
-//
-//hwp.officialEmailIdElement.sendKeys(p.getProperty("InvalidemailId"));
-//
-//hwp.organizantionSizeDropdown();
-//
-//hwp.interestedInDropdown();
-//
-//if(hwp.getScheduleDemoAreaElement().isEnabled())
-//{
-//	
-//	hwp.ClickScheduleButton();
-//	System.out.println("Schedule Demo Button is Enabled");
-//	
-//	Thread.sleep(10000);
-//	
-//	
-//	TakeScreenshot ts = new TakeScreenshot(driver);
-//	
-//	ts.takeScreenshot(driver, "Firstscreenshot.png");
-//	
-//	String thankyou= hwp.captureThankYouTextElement.getText();
-//	System.out.println(thankyou);
-//	
-//	String belowtext= hwp.captureBelowTextElement.getText();
-//	System.out.println(belowtext);
-//}
-//else
-//{
-//	System.out.println("Schedule Demo Button is Disabled");
-//}
-//
-//}

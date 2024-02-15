@@ -16,11 +16,18 @@ public class homePage extends basePage{
 
 	//Elements
 
-	@FindBy(xpath="(//input[@data-qa-id='omni-searchbox-locality'])")
+//	@FindBy(xpath="(//input[@data-qa-id='omni-searchbox-locality'])")
+//	public WebElement LocationArea;
+	
+	@FindBy(xpath="//div[@class='c-omni__wrapper u-clearfix c-omni__wrapper--locality']//div[@class='c-omni-searchbox_wrapper ']/input")
 	public WebElement LocationArea;
 	
-	@FindBy(xpath="(//div[@data-qa-id='omni-suggestion-city'])[1]")
+	
+	@FindBy(xpath="//body/div[@id='root']/div/div/div[@class='content']/div[@class='c-omni-wrapper u-d__inline-block']/div[@id='c-omni-container']/div[@class='c-omni u-clearfix']/div[@class='c-omni__wrapper u-clearfix c-omni__wrapper--locality']/div[@class='c-omni-suggestion-list']/div[@class='c-omni-suggestion-group']/div[1]/span[1]")
 	public WebElement BangloreOption;
+	
+//	@FindBy(xpath="(//div[@data-qa-id='omni-suggestion-city'])[1]")
+//	public WebElement BangloreOption;
 	
 	@FindBy(xpath="(//input[@data-qa-id='omni-searchbox-keyword'])")
 	public WebElement SearchDoctorsArea;
@@ -51,11 +58,7 @@ public class homePage extends basePage{
 		
 	}
 	
-	public void EnterLocation()
-	{
-		LocationArea.sendKeys("Banglore");
-		
-	}
+	
 	
 	public void ClickOnBloreLoc()
 	{
@@ -74,10 +77,7 @@ public class homePage extends basePage{
 		surgeriesButton.click();
 	}
 	
-	public void EnterDocSpeciality()
-	{
-		SearchDoctorsArea.sendKeys("Cardiologiest");
-	}
+	
 	
 
 	public void ClickOnCardiologiestOpt()

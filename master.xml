@@ -8,12 +8,10 @@
    <parameter name="os" value="Windows"/>
   	<parameter name="browser" value="chrome" />
     	<classes>
-    
-      
-   <!-- --><class name="testCase.TC_001_SearchingCardiologiests"/>
-    		<class name="testCase.TC_002_CaptureSurgeries"/>   <!-- -->
-   <!--  --><class name="testCase.TC_003_CorporateHealthAndWellness_InvalidDetails"/>
-   <!-- --> <class name="testCase.TC_004_CorporateHealthAndWellness_ValidDetails"/> 
+			<class name="testCase.TC_001_SearchingCardiologiests"/>
+    		<class name="testCase.TC_002_CaptureSurgeries"/>   
+   			<class name="testCase.TC_003_CorporateHealthAndWellness_InvalidDetails"/>
+   			<class name="testCase.TC_004_CorporateHealthAndWellness_ValidDetails"/>
       
     </classes>
   </test> <!-- Test -->
