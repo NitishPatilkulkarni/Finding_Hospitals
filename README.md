@@ -6,7 +6,7 @@ This project utilizes a hybrid framework in Selenium with Java, implementing the
 
 •	Location: Bangalore
 
-•	Speciality: Dentist
+•	Speciality: Cardiologist
 
 •	Filters:
 
